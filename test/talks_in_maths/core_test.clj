@@ -19,5 +19,5 @@
     (is (= [1 2] (word-lengths "a bc")))))
 
 (deftest longwords
-  (testing "words longer than 1 digit"
+  (testing "words longer than 1 digit roll over"
     (is (= [1] (word-lengths "01234567890")))))

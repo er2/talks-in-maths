@@ -9,4 +9,4 @@
 (defn word-lengths
   "Calculates the sequence of lengths of words in the given string"
   [txt]
-  (map #(.length %) (split-ws txt)))
+  (map #(mod (.length %) 10) (split-ws txt)))
